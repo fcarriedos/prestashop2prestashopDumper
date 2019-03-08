@@ -1,0 +1,1 @@
+sed "s/^\"/'/g" product_2019-03-06_153153.csv | sed "s/\";\"/';'/g" | sed "s/\";$/';/g" > ./product_2019-03-06_153153.SINGLE_QUOTES.csv

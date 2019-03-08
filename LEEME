@@ -1,0 +1,5 @@
+Se crean los volcados _por categor'ia_ con este comando:
+
+PRODUCT_INDEX=1; for i in `find dump/en/cadenas/ -iname "*.html"`; do ./downloadInfo.sh $i $PRODUCT_INDEX /home/francisco/Desktop/materialesBenito/take1/tailorMadeDumps/en/cadenas.csv; PRODUCT_INDEX=$((PRODUCT_INDEX+1)); echo "PRODUCT_INDEX IS $PRODUCT_INDEX"; done;
+
+Para cada idioma hay que cambiar los "en" o "es" que aparecen (m'as de uno) y el fichero de destino.
